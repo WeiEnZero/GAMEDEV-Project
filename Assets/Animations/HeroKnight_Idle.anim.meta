@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6b86f35c98a6d64a8657ac669ba6f3d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165188
+  packageName: Hero Knight - Pixel Art
+  packageVersion: 1.2
+  assetPath: Assets/Hero Knight - Pixel Art/Animations/HeroKnight_Idle.anim
+  uploadId: 447637

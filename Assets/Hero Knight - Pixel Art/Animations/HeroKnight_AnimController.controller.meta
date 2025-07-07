@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e18367eb7493aab479b64b2d16cd8de5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 165188
+  packageName: Hero Knight - Pixel Art
+  packageVersion: 1.2
+  assetPath: Assets/Hero Knight - Pixel Art/Animations/HeroKnight_AnimController.controller
+  uploadId: 447637
