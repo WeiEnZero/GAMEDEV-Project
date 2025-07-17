@@ -18,12 +18,12 @@ public class EnemyAIChase : MonoBehaviour
     void Update()
     {
         Xaxis = Input.GetAxisRaw("Horizontal") * speed;
-        distance = Vector2.Distance(transform.position, Player.transform.position);
-        Vector2 direction = Player.transform.position - transform.position;
+        distance = Vector2.Distance(transform.position, Player.position);
+        Vector2 direction = Player.position - transform.position;
 
         if (distance < distanceBetween)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(this.transform.position, Player.position, speed * Time.deltaTime);
         }
 
 
