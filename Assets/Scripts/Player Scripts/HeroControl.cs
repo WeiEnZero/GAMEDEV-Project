@@ -29,11 +29,11 @@ public class HeroControl : MonoBehaviour
 
         if (speedX > 0)
         {
-            gameObject.transform.localScale = new Vector3(4.7726f, 4.7726f, 1);
+            gameObject.transform.localScale = new Vector3(1.860132f, 1.860132f, 1);
         } 
         else if (speedX < 0) 
         {
-            gameObject.transform.localScale = new Vector3(-4.7726f, 4.7726f, 1);
+            gameObject.transform.localScale = new Vector3(-1.860132f, 1.860132f, 1);
         }
     }
 
@@ -58,6 +58,6 @@ public class HeroControl : MonoBehaviour
 
     public void IdleAnimation()
     {
-        animator.Play("Idle");
+        animator.Play("Idle 0");
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerAttackRange : MonoBehaviour
 {
-    private int damage = 3;
+    private int damage = 10;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

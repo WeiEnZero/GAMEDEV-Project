@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     // Initialising the player health
-    private int Enemy_health = 5;
+    private int Enemy_health = 20;
     private int health;
     private BoxCollider2D RB { get; set; }
     private IEnumerator coroutine;

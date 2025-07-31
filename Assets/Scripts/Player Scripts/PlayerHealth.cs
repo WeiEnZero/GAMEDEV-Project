@@ -1,9 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour 
 {
     // Initialising the player health
-    private int player_health = 10;
+    public int player_health = 50;
     private int health;
     private BoxCollider2D RB { get; set; }
 
@@ -20,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log("Player has taken damage");
+        Debug.Log($"Player has taken {damage} damage");
         if (health <= 0 )
         {
             Destroy(gameObject);
