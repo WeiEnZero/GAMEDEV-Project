@@ -5,8 +5,10 @@ public class PlayerHealth : MonoBehaviour
 {
     // Initialising the player health
     public int player_health = 50;
-    private int health;
+    public int health;
     private BoxCollider2D RB { get; set; }
+    public GameManager gameManager;
+    public bool isDead;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created.
     void Start()
@@ -22,9 +24,11 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
         Debug.Log($"Player has taken {damage} damage");
-        if (health <= 0 )
+        if (health <= 0 && !isDead)
         {
-            Destroy(gameObject);
+            isDead = true;
+            gameManager.gameOver();
+            gameObject.SetActive(false);
         }
     }
 }

@@ -38,7 +38,8 @@ public class PlayerBasicAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            AttackAnimation();
+            //AttackAnimation();
+            animator.SetBool("Attacking", true);
         }
     }
 
@@ -48,9 +49,14 @@ public class PlayerBasicAttack : MonoBehaviour
         attackRange.SetActive(attacking);
     }
 
-    public void AttackAnimation()
+    //public void AttackAnimation()
+    //{
+        //animator.Play("Attack");
+    //}
+
+    public void EndAttack()
     {
-        animator.Play("Attack");
+        animator.SetBool("Attacking", false);
     }
 }
 

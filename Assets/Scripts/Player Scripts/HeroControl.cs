@@ -29,11 +29,11 @@ public class HeroControl : MonoBehaviour
 
         if (speedX > 0)
         {
-            gameObject.transform.localScale = new Vector3(1.860132f, 1.860132f, 1);
+            gameObject.transform.localScale = new Vector3(3.35655f, 3.35655f, 1);
         } 
         else if (speedX < 0) 
         {
-            gameObject.transform.localScale = new Vector3(-1.860132f, 1.860132f, 1);
+            gameObject.transform.localScale = new Vector3(-3.35655f, 3.35655f, 1);
         }
     }
 
@@ -42,7 +42,7 @@ public class HeroControl : MonoBehaviour
         // If the movement magnitude of the hero is more than 0, the walk animation function is used else the Idle Animation is active.
         if (rigidBody.linearVelocity.magnitude > 0)
         {
-            WalkAnimation();
+            animator.SetBool("Walking", true);
         }
         else
         {
@@ -58,6 +58,6 @@ public class HeroControl : MonoBehaviour
 
     public void IdleAnimation()
     {
-        animator.Play("Idle 0");
+        animator.SetBool("Walking", false);
     }
 }
