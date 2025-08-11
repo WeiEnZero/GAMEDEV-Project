@@ -1,10 +1,13 @@
+using System;
 using UnityEngine;
 
 public class BasicEnemyAttack : MonoBehaviour
 {
+    public EnemyTypes enemyType;
     // Set the attack damage for the Basic enemy and initialise the health linked to PlayerHealth.
     public int damage = 5;
     public PlayerHealth health;
+    public static event Action<EnemyTypes> OnEnemyTouch;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private void Start()
@@ -22,6 +25,7 @@ public class BasicEnemyAttack : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            OnEnemyTouch?.Invoke(enemyType);
             health.TakeDamage(damage);
         }
     }

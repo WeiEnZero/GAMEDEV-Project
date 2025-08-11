@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     public int health;
     private BoxCollider2D RB { get; set; }
     public GameManager gameManager;
-    public bool isDead;
+    public bool isDead = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created.
     void Start()
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         {
             isDead = true;
             gameManager.gameOver();
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

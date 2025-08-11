@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEditor.EditorTools;
 
 namespace Enemy
 {
@@ -11,6 +12,8 @@ namespace Enemy
         public Transform enemyParent;
 
         float timer = 0f;
+
+        Timer gameTime;
 
         private void Start()
         {
@@ -35,8 +38,8 @@ namespace Enemy
 
         private void Update()
         {
-            timer += Time.deltaTime;
-            if (timer >= 0.7f)
+            timer += Time.deltaTime;       // Timer is increased each second with Time.deltaTime and used to determine the spawning time for enemy objects each interval period.
+            if (timer >= 1.45f)          // This if condition is used when the timer is 2 seconds or more, it will activate the SpawnEnemies function to spawn in a random enemy from the array and resets the timer to prepare for the next spawn in.
             {
                 SpawnEnemies();
                 timer = 0f;

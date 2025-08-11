@@ -1,4 +1,6 @@
 public enum EnemyTypes
 {
-    Skeleton_Enemy
+    Skeleton_Enemy,
+    FastEnemy,
+    TankEnemy
 }
