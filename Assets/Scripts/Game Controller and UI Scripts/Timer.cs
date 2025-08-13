@@ -28,13 +28,13 @@ public class Timer : MonoBehaviour
         }
     }
 
-    void DisplayTime(float timeToDisplay)
+    void DisplayTime(float timeToDisplay) // Function used to added every second to the timer, converts the time to minutes and seconds using Floor to Interger and Updates the display text in game.
     {
         timeToDisplay += 1;
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timeText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
-        if (GameOverUI) {
+        if (GameOverUI) {   // If the GameOver UI is active, the displayed timing will be updated to the current displayed text.
             gameOver.Setup(timeText.text);
         }
     }

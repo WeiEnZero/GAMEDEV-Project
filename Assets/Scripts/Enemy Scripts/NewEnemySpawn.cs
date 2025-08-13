@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEditor.EditorTools;
+//using UnityEditor.EditorTools;
 
 namespace Enemy
 {
@@ -22,12 +22,12 @@ namespace Enemy
 
         private void SpawnEnemies()
         {
-            // Randomly select a spawnpoint
+            // Randomly selects a spawnpoint
             int spawnPointIndex = Random.Range(0, spawnPoints.Length);
             Transform sp = spawnPoints[spawnPointIndex];
             Vector3 pos = sp.position;
 
-            // Randomly select an item prefab
+            // Randomly selects an item prefab
             int enemyIndex = Random.Range(0, enemies.Count);
             GameObject enemyOne = enemies[enemyIndex];
 

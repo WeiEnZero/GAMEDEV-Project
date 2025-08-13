@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mappings:
   - enemyType: 0
-    clip: {fileID: 8300000, guid: 659f5bd15541d6248895114385f0057a, type: 3}
+    clip: {fileID: 8300000, guid: fb6430638c823ae488d3a0a2859ab588, type: 3}
   - enemyType: 1
-    clip: {fileID: 8300000, guid: 659f5bd15541d6248895114385f0057a, type: 3}
+    clip: {fileID: 8300000, guid: fb6430638c823ae488d3a0a2859ab588, type: 3}
   - enemyType: 2
-    clip: {fileID: 8300000, guid: 659f5bd15541d6248895114385f0057a, type: 3}
+    clip: {fileID: 8300000, guid: fb6430638c823ae488d3a0a2859ab588, type: 3}

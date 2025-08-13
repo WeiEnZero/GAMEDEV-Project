@@ -33,6 +33,10 @@ public class HealthBarsS : MonoBehaviour
             int player_health1 = player_health.health;
             CurrentHealth = player_health1;
             HealthBar.fillAmount = CurrentHealth / MaxHealth;
+            if (CurrentHealth == 0)
+            {
+                HealthBar.fillAmount = 0;
+            }
         }
     }
 }

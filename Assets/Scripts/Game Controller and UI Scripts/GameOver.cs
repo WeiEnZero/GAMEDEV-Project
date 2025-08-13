@@ -11,6 +11,6 @@ public class GameOver : MonoBehaviour
 
     public void Setup(string timeremianing)
     {
-        timeText.text = $"You survived for {timeremianing}";
+        timeText.text = $"Congrats! You survived for {timeremianing}";
     }
 }
